@@ -105,7 +105,7 @@ async def main():
         
 class Data:
     START = (
-        "🌟 Welcome Dear😘💜 {0}! 🌟\n\n"
+        "🌟 Welcome Dear😘💥 {0}! 🌟\n\n"
     )
 # Define the start command handler
 @bot.on_message(filters.command("start"))
@@ -154,7 +154,7 @@ async def start(client: Client, msg: Message):
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("**STOPPED**🛑", True)
+    await m.reply_text("♥️**STOPPED**♥️", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -281,10 +281,10 @@ async def txt_handler(bot: Client, m: Message):
              #url = f"https://player.muftukmall.site/?id={id}"
             #elif '/master.mpd' in url:
              #id =  url.split("/")[-2]
-             #url = f"https://anonymouspwplayer-554b25895c1a.herokuapp.com/pw?url={url}?token={raw_text4}"
+             #url = f"https://anonymouspwplayerr-c96de7802811.herokuapp.com/pw?url={url}?token={raw_text4}"
             #url = f"https://madxapi-d0cbf6ac738c.herokuapp.com/{id}/master.m3u8?token={raw_text4}"
             elif"d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
-             url = f"https://anonymouspwplayer-554b25895c1a.herokuapp.com/pw?url={url}&token={raw_text4}"
+             url = f"https://anonymouspwplayerr-c96de7802811.herokuapp.com/pw?url={url}&token={raw_text4}"
                      
                                                          
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
